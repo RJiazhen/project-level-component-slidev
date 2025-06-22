@@ -1,11 +1,19 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# 项目级组件封装指南配套示例
 
-To start the slide show:
+## 依赖安装
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+```bash
+bun install
+```
 
-Edit the [slides.md](./slides.md) to see the changes.
+## 启动demo页面
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+```bash
+bun dev:vite
+```
+
+## 启动幻灯片
+
+```bash
+bun dev
+```
