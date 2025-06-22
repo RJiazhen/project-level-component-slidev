@@ -1,5 +1,5 @@
 import type { FormProps } from "antd";
-import { ProjectComponetsDemo } from "./pages/projectComponetsDemo";
+import { ProjectComponetsDemo } from "./pages/projectComponentsDemo";
 
 export default function App() {
   type FieldType = {
