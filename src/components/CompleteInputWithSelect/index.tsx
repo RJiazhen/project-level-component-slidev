@@ -3,7 +3,7 @@
  */
 import { Col, Input, Row, Select } from 'antd';
 import { BaseOptionType, DefaultOptionType } from 'antd/es/select';
-import React, { useMemo } from 'react';
+import { ComponentProps, useMemo } from 'react';
 
 /** 组件值类型 */
 type Value<SelectValue = any> = {
@@ -18,19 +18,19 @@ type Props<
   SelectOptionType extends BaseOptionType = DefaultOptionType,
 > = {
   /** 透传给Row组件的参数 */
-  rowProps?: React.ComponentProps<typeof Row>;
+  rowProps?: ComponentProps<typeof Row>;
   /** 透传给Select组件的参数 */
-  selectProps?: React.ComponentProps<
+  selectProps?: ComponentProps<
     typeof Select<SelectValueType, SelectOptionType>
   >;
   /** 透传给包裹Select的Col组件的参数 */
-  selectColProps?: React.ComponentProps<typeof Col>;
+  selectColProps?: ComponentProps<typeof Col>;
   /** 透传给Input组件的参数 */
-  inputProps?: React.ComponentProps<typeof Input>;
+  inputProps?: ComponentProps<typeof Input>;
   /** 透传给包裹Input的Col组件的参数 */
-  inputColProps?: React.ComponentProps<typeof Col>;
+  inputColProps?: ComponentProps<typeof Col>;
   /** 下拉选项 */
-  options?: React.ComponentProps<
+  options?: ComponentProps<
     typeof Select<SelectValueType, SelectOptionType>
   >['options'];
   /** 默认值 */

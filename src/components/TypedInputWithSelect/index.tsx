@@ -2,21 +2,26 @@
  * 带下拉选择框的输入框，可以用于Form.Item组件中，有完整的类型声明
  */
 import { Col, Input, Row, Select } from 'antd';
-import React, { ComponentProps, useMemo } from 'react';
+import { ComponentProps, useMemo } from 'react';
 
 type Value = {
   select?: ComponentProps<typeof Select>['value'];
   input?: ComponentProps<typeof Input>['value'];
 };
 
+type DefaultValue = {
+  select?: ComponentProps<typeof Select>['defaultValue'];
+  input?: ComponentProps<typeof Input>['defaultValue'];
+};
+
 type Props = {
-  rowProps?: React.ComponentProps<typeof Row>;
-  selectProps?: React.ComponentProps<typeof Select>;
-  selectColProps?: React.ComponentProps<typeof Col>;
-  inputProps?: React.ComponentProps<typeof Input>;
-  inputColProps?: React.ComponentProps<typeof Col>;
-  options?: React.ComponentProps<typeof Select>['options'];
-  defaultValue?: Value;
+  rowProps?: ComponentProps<typeof Row>;
+  selectProps?: ComponentProps<typeof Select>;
+  selectColProps?: ComponentProps<typeof Col>;
+  inputProps?: ComponentProps<typeof Input>;
+  inputColProps?: ComponentProps<typeof Col>;
+  options?: ComponentProps<typeof Select>['options'];
+  defaultValue?: DefaultValue;
   value?: Value;
   onChange?: (value: Value) => void;
 };
