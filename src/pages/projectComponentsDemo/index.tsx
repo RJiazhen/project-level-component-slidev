@@ -6,7 +6,7 @@ import type { FormProps } from 'antd';
 import { Button, Form } from 'antd';
 import { InputWithSelect } from './components/InputWithSelect/index.jsx';
 
-export const ProjectComponetsDemo = () => {
+export const ProjectComponentsDemo = () => {
   const onFinish: FormProps['onFinish'] = (values) => {
     console.log('onFinish:', values);
   };

@@ -1,5 +1,5 @@
-import type { FormProps } from "antd";
-import { ProjectComponetsDemo } from "./pages/projectComponentsDemo";
+import type { FormProps } from 'antd';
+import { ProjectComponentsDemo } from './pages/projectComponentsDemo';
 
 export default function App() {
   type FieldType = {
@@ -8,9 +8,9 @@ export default function App() {
     remember?: string;
   };
 
-  const onFinish: FormProps<FieldType>["onFinish"] = (values) => {
-    console.log("Success:", values);
+  const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
+    console.log('Success:', values);
   };
 
-  return <ProjectComponetsDemo />;
+  return <ProjectComponentsDemo />;
 }
