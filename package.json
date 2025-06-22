@@ -3,12 +3,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build:slidev": "slidev build",
-    "dev:slidev": "slidev --open",
-    "export:slidev": "slidev export",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "dev:vite": "vite",
+    "build:vite": "tsc && vite build",
+    "preview:vite": "vite preview"
   },
   "dependencies": {
     "@slidev/cli": "51.8.2",
