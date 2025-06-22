@@ -8,7 +8,7 @@ import { InputWithSelect } from './components/InputWithSelect/index.jsx';
 
 export const ProjectComponentsDemo = () => {
   const onFinish: FormProps['onFinish'] = (values) => {
-    console.log('onFinish:', values);
+    alert('onFinish:' + JSON.stringify(values, null, 2));
   };
 
   const options = [
@@ -86,6 +86,14 @@ export const ProjectComponentsDemo = () => {
           htmlType="submit"
         >
           Submit
+        </Button>
+      </Form.Item>
+      <Form.Item label={null}>
+        <Button
+          type="primary"
+          htmlType="submit"
+        >
+          提交
         </Button>
       </Form.Item>
     </Form>
